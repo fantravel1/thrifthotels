@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find the best cheap hotels that are still clean and safe. Quality-verified budget hotels in great neighborhoods across 250+ cities. Not sketchy, just smart. Avoid scams with our 5-score verification system.">
+    <meta name="keywords" content="cheap hotels, best budget hotels, cheap hotels downtown, cheap hotels near me, budget hotels safe neighborhoods, cheap hotels not sketchy, avoid hotel scams, cheap boutique hotels, budget hotels solo travelers, cheap hotels for couples, quality budget stays, thrift hotels">
+    <meta name="author" content="ThriftHotels.com">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thrifthotels.com/">
+    <meta property="og:title" content="ThriftHotels.com - Cheapest Hotels That Are Still Quality">
+    <meta property="og:description" content="The world's definitive guide to quality-verified budget hotels. Clean, safe, well-located stays in 250+ cities.">
+    <meta property="og:image" content="https://thrifthotels.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://thrifthotels.com/">
+    <meta property="twitter:title" content="ThriftHotels.com - Cheapest Hotels That Are Still Quality">
+    <meta property="twitter:description" content="The world's definitive guide to quality-verified budget hotels.">
+    <meta property="twitter:image" content="https://thrifthotels.com/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <title>Best Cheap Hotels That Are Still Clean & Safe | ThriftHotels.com - Budget Hotels in Great Neighborhoods</title>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "ThriftHotels.com",
+      "alternateName": "Thrift Hotels",
+      "url": "https://thrifthotels.com",
+      "description": "The world's definitive guide to the cheapest hotels that are still actually good",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://thrifthotels.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ThriftHotels.com",
+      "url": "https://thrifthotels.com",
+      "logo": "https://thrifthotels.com/logo.png",
+      "description": "Quality-verified budget hotel database for travelers worldwide",
+      "sameAs": [
+        "https://twitter.com/thrifthotels",
+        "https://facebook.com/thrifthotels",
+        "https://instagram.com/thrifthotels"
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the best cheap hotels in a city that are still clean and safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The best cheap hotels that maintain cleanliness and safety standards are those that pass our 5-score verification system. We evaluate every hotel on cleanliness, safety, location, value, and consistency. Hotels must have verified clean sheets and bathrooms (no bedbug reports), working locks and well-lit entrances, safe neighborhood location, and consistent positive reviews across multiple sources."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the best budget hotels in the best neighborhoods?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We rank budget hotels by neighborhood quality, considering safety scores (well-lit streets, low crime rates), transit access (walking distance to metro/bus), walkability (proximity to restaurants, shops, attractions), and value density (best price-to-location ratio)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where should I stay if I want cheap but not sketchy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Look for hotels with character (historic buildings, boutique-style), business hotels during off-peak seasons, smaller hotels in central locations that skip luxury amenities, and properties with Tier A or B evidence ratings. We filter out sketchy hotels through our dealbreaker flags system - any hotel with safety complaints, scam pricing, or bait-and-switch photos is immediately removed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I find cheap hotels without getting scammed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Avoid hotel scams by: checking reviews on 3+ platforms (multi-source verification), looking for photos uploaded in the last 6 months, reading negative reviews first for patterns, checking for dealbreakers (bedbugs, dirty bathrooms, fake photos), doing a price reality check (if it's 50% cheaper than everything else, there's a reason), and sticking to Tier A and B hotels for highest confidence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the best cheap hotels for solo travelers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Solo travelers need hotels with central location (safe walking at night, easy transit access), 24-hour reception, common areas (lobbies or cafes to meet other travelers), fair single room pricing, and verified safety (well-lit hallways, working locks, secure neighborhoods)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the best budget hotels for couples?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Best budget hotels for couples offer quiet rooms (away from street noise), character over amenities (exposed brick beats a rooftop pool), romantic neighborhoods (walkable to date-night spots), comfortable double beds with clean linens, and bathroom privacy (no shared bathrooms)."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <span class="logo-icon">⭐</span>
+                <span class="logo-text">ThriftHotels</span>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="cities.html" class="nav-link">Cities</a></li>
+                <li class="nav-item"><a href="neighborhoods.html" class="nav-link">Neighborhoods</a></li>
+                <li class="nav-item"><a href="hotels.html" class="nav-link">Hotels</a></li>
+                <li class="nav-item"><a href="rankings.html" class="nav-link">Rankings</a></li>
+                <li class="nav-item"><a href="strategies.html" class="nav-link">Strategies</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-title-main">The World's Definitive Guide to</span>
+                    <span class="hero-title-highlight">Cheap Hotels That Are Still Quality</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Not just cheap. Not just any hotel. The perfect intersection of value and quality—verified, ranked, and mapped across 250+ cities worldwide.
+                </p>
+                <div class="hero-badges">
+                    <span class="badge">✓ Quality Verified</span>
+                    <span class="badge">✓ Safety Checked</span>
+                    <span class="badge">✓ Location Rated</span>
+                    <span class="badge">✓ Value Scored</span>
+                </div>
+                <div class="hero-cta">
+                    <a href="cities.html" class="btn btn-primary">Explore Cities</a>
+                    <a href="about.html" class="btn btn-secondary">How It Works</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">250+</div>
+                    <div class="stat-label">Cities Covered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Hotels Verified</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2,000+</div>
+                    <div class="stat-label">Neighborhoods Mapped</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5 Scores</div>
+                    <div class="stat-label">Per Hotel</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="problem-solution">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Most "Cheap Hotel" Lists Are Trash</h2>
+                <p class="section-subtitle">We're different. Here's why.</p>
+            </div>
+
+            <div class="comparison-grid">
+                <div class="comparison-card problem">
+                    <h3>❌ Other Sites</h3>
+                    <ul>
+                        <li>Show any cheap hotel</li>
+                        <li>Hidden fees everywhere</li>
+                        <li>Sketchy locations</li>
+                        <li>Bait-and-switch photos</li>
+                        <li>No quality standards</li>
+                        <li>Fake reviews</li>
+                    </ul>
+                </div>
+
+                <div class="comparison-card solution">
+                    <h3>✓ ThriftHotels</h3>
+                    <ul>
+                        <li>Quality-verified only</li>
+                        <li>Transparent pricing</li>
+                        <li>Location-rated</li>
+                        <li>Honest trade-offs disclosed</li>
+                        <li>5-score validation system</li>
+                        <li>Evidence-based ratings</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Promise Section -->
+    <section class="core-promise">
+        <div class="container">
+            <div class="promise-content">
+                <h2 class="promise-title">Our Non-Negotiable Promise</h2>
+                <p class="promise-text">
+                    Every hotel on ThriftHotels must pass our 5-score verification system.
+                    We're not looking for the absolute cheapest—we're finding <strong>the cheapest place you'll still feel good staying</strong>.
+                </p>
+            </div>
+
+            <div class="score-grid">
+                <div class="score-card">
+                    <div class="score-icon">🧼</div>
+                    <h3>Cleanliness Score</h3>
+                    <p>Clean sheets, clean bathrooms, no gross surprises</p>
+                </div>
+                <div class="score-card">
+                    <div class="score-icon">🛡️</div>
+                    <h3>Safety Score</h3>
+                    <p>Secure area, working locks, well-lit entrances</p>
+                </div>
+                <div class="score-card">
+                    <div class="score-icon">📍</div>
+                    <h3>Location Score</h3>
+                    <p>Transit access, walkability, proximity to attractions</p>
+                </div>
+                <div class="score-card">
+                    <div class="score-icon">💰</div>
+                    <h3>Value Score</h3>
+                    <p>Price vs. quality ratio—the core metric</p>
+                </div>
+                <div class="score-card">
+                    <div class="score-icon">⭐</div>
+                    <h3>Consistency Score</h3>
+                    <p>Not just one lucky review—reliable quality</p>
+                </div>
+                <div class="score-card">
+                    <div class="score-icon">🚫</div>
+                    <h3>Dealbreaker Flags</h3>
+                    <p>Bedbugs, scams, or safety issues = instant removal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How ThriftHotels Works</h2>
+                <p class="section-subtitle">Human-verified quality + AI-powered scale</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>City Mapping</h3>
+                    <p>We identify 250+ major cities and map their neighborhoods by safety, vibe, and transit access.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Hotel Discovery</h3>
+                    <p>AI scans thousands of hotels. We look for the "Rex Hotel" of every city—cheap, central, character, reliable.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>5-Score Validation</h3>
+                    <p>Every hotel is scored on cleanliness, safety, location, value, and consistency using multi-source evidence.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Human Review</h3>
+                    <p>Humans validate photos, check for scams, verify locations, and ensure honest recommendations.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3>Honest Disclosure</h3>
+                    <p>We tell you the trade-offs: Is it noisy? Small rooms? No frills? You deserve to know.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h3>Regular Updates</h3>
+                    <p>Rankings are refreshed regularly. Hotels that decline get removed. Quality comes first.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- City Explorer Preview -->
+    <section class="city-explorer">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Explore Top Thrift Cities</h2>
+                <p class="section-subtitle">Start with our most popular destinations</p>
+            </div>
+
+            <div class="city-grid">
+                <a href="cities.html" class="city-card">
+                    <div class="city-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="city-overlay">
+                            <h3 class="city-name">Toronto</h3>
+                            <p class="city-hotels">25 verified hotels</p>
+                            <p class="city-range">From $45/night</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="cities.html" class="city-card">
+                    <div class="city-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="city-overlay">
+                            <h3 class="city-name">New York</h3>
+                            <p class="city-hotels">48 verified hotels</p>
+                            <p class="city-range">From $65/night</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="cities.html" class="city-card">
+                    <div class="city-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="city-overlay">
+                            <h3 class="city-name">London</h3>
+                            <p class="city-hotels">35 verified hotels</p>
+                            <p class="city-range">From £40/night</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="cities.html" class="city-card">
+                    <div class="city-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <div class="city-overlay">
+                            <h3 class="city-name">Barcelona</h3>
+                            <p class="city-hotels">42 verified hotels</p>
+                            <p class="city-range">From €35/night</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="cities.html" class="city-card">
+                    <div class="city-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <div class="city-overlay">
+                            <h3 class="city-name">Tokyo</h3>
+                            <p class="city-hotels">38 verified hotels</p>
+                            <p class="city-range">From ¥4,500/night</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="cities.html" class="city-card">
+                    <div class="city-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                        <div class="city-overlay">
+                            <h3 class="city-name">Berlin</h3>
+                            <p class="city-hotels">31 verified hotels</p>
+                            <p class="city-range">From €32/night</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cta-center">
+                <a href="cities.html" class="btn btn-primary">Browse All 250+ Cities</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="collections">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Curated Collections</h2>
+                <p class="section-subtitle">Hotels by traveler type, vibe, and purpose</p>
+            </div>
+
+            <div class="collection-grid">
+                <a href="collections.html" class="collection-card">
+                    <div class="collection-icon">🎒</div>
+                    <h3>Best for Solo Travelers</h3>
+                    <p>Safe, social, and centrally located budget stays</p>
+                </a>
+
+                <a href="collections.html" class="collection-card">
+                    <div class="collection-icon">💑</div>
+                    <h3>Best for Couples</h3>
+                    <p>Cheap but romantic—character over luxury</p>
+                </a>
+
+                <a href="collections.html" class="collection-card">
+                    <div class="collection-icon">👥</div>
+                    <h3>Best for Groups</h3>
+                    <p>Multi-bed rooms and value-packed group stays</p>
+                </a>
+
+                <a href="collections.html" class="collection-card">
+                    <div class="collection-icon">🎵</div>
+                    <h3>Near Stadiums & Venues</h3>
+                    <p>Concert? Game? Festival? Sleep cheap nearby.</p>
+                </a>
+
+                <a href="collections.html" class="collection-card">
+                    <div class="collection-icon">🏛️</div>
+                    <h3>Historic & Boutique</h3>
+                    <p>Character hotels that won't break the bank</p>
+                </a>
+
+                <a href="collections.html" class="collection-card">
+                    <div class="collection-icon">💼</div>
+                    <h3>Business Travel Value</h3>
+                    <p>WiFi, workspace, and walkable to transit</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategies Section -->
+    <section class="strategies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Master Thrift Hotel Strategies</h2>
+                <p class="section-subtitle">Get even better deals with insider knowledge</p>
+            </div>
+
+            <div class="strategy-grid">
+                <a href="strategies.html" class="strategy-card">
+                    <div class="strategy-number">01</div>
+                    <h3>How to Book Thrift Hotels</h3>
+                    <p>Best platforms, timing tricks, and hidden discount stacking methods.</p>
+                </a>
+
+                <a href="strategies.html" class="strategy-card">
+                    <div class="strategy-number">02</div>
+                    <h3>How to Avoid Fake Deals</h3>
+                    <p>Spot bait-and-switch pricing, hidden fees, and scam listings instantly.</p>
+                </a>
+
+                <a href="strategies.html" class="strategy-card">
+                    <div class="strategy-number">03</div>
+                    <h3>Best Room Types for Value</h3>
+                    <p>Why the 3rd floor corner room is almost always the best thrift pick.</p>
+                </a>
+
+                <a href="strategies.html" class="strategy-card">
+                    <div class="strategy-number">04</div>
+                    <h3>Seasonal Pricing Patterns</h3>
+                    <p>When Toronto hotels drop 60%. When Tokyo capsules spike. We track it all.</p>
+                </a>
+
+                <a href="strategies.html" class="strategy-card">
+                    <div class="strategy-number">05</div>
+                    <h3>Neighborhood Value Maps</h3>
+                    <p>Where to stay in every city for maximum location value per dollar.</p>
+                </a>
+
+                <a href="strategies.html" class="strategy-card">
+                    <div class="strategy-number">06</div>
+                    <h3>Long-Stay Negotiation</h3>
+                    <p>How to negotiate weekly rates that aren't advertised online.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who It's For Section -->
+    <section class="who-its-for">
+        <div class="container">
+            <h2 class="section-title">Who ThriftHotels Is For</h2>
+
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <h3>Budget Travelers</h3>
+                    <p>You want to see the world, not spend all your money on a bed you'll barely use.</p>
+                </div>
+
+                <div class="audience-card">
+                    <h3>Students</h3>
+                    <p>Limited budget. Maximum adventure. We get it.</p>
+                </div>
+
+                <div class="audience-card">
+                    <h3>Event-Goers</h3>
+                    <p>Concert? Conference? Game? Just need a place to crash near the venue.</p>
+                </div>
+
+                <div class="audience-card">
+                    <h3>Frequent Travelers</h3>
+                    <p>You travel often. Hotels add up. Save thousands per year with smarter picks.</p>
+                </div>
+
+                <div class="audience-card">
+                    <h3>Experience-First Travelers</h3>
+                    <p>Spend money on activities, food, and memories—not overpriced hotel lobbies.</p>
+                </div>
+
+                <div class="audience-card">
+                    <h3>Digital Nomads</h3>
+                    <p>Need WiFi, a desk, and good location—don't need a rooftop pool.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evidence & Trust Section -->
+    <section class="evidence-trust">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Evidence-Based. Human-Verified. Always Honest.</h2>
+                <p class="section-subtitle">Our 4-tier verification system</p>
+            </div>
+
+            <div class="evidence-grid">
+                <div class="evidence-card tier-a">
+                    <div class="tier-badge">Tier A</div>
+                    <h3>Highest Confidence</h3>
+                    <p>Verified listings + multi-source review patterns + field-verified evidence</p>
+                </div>
+
+                <div class="evidence-card tier-b">
+                    <div class="tier-badge">Tier B</div>
+                    <h3>Strong Evidence</h3>
+                    <p>Reputable booking platforms + strong consistency across review sources</p>
+                </div>
+
+                <div class="evidence-card tier-c">
+                    <div class="tier-badge">Tier C</div>
+                    <h3>Verified Reports</h3>
+                    <p>Verified traveler field reports + recent photographic evidence</p>
+                </div>
+
+                <div class="evidence-card tier-d">
+                    <div class="tier-badge">Tier D</div>
+                    <h3>Never Published</h3>
+                    <p>Insufficient evidence, conflicting reports, or dealbreaker flags present</p>
+                </div>
+            </div>
+
+            <div class="trust-statement">
+                <p>Every listing includes: <strong>last-reviewed date</strong>, <strong>confidence label</strong>, and <strong>honest trade-off disclosure</strong>. We'd rather tell you "this hotel is noisy but worth it" than lie and say everything is perfect.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ranking Types -->
+    <section class="ranking-types">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Browse by Ranking Type</h2>
+                <p class="section-subtitle">Find exactly what you're looking for</p>
+            </div>
+
+            <div class="ranking-grid">
+                <a href="rankings.html" class="ranking-card">
+                    <h3>📍 By Neighborhood</h3>
+                    <p>Best thrift hotels in Downtown, Near Transit, By the Beach, etc.</p>
+                </a>
+
+                <a href="rankings.html" class="ranking-card">
+                    <h3>🎯 By Purpose</h3>
+                    <p>Business Travel, Event Stays, Extended Stays, Weekend Getaways</p>
+                </a>
+
+                <a href="rankings.html" class="ranking-card">
+                    <h3>💰 By Price Range</h3>
+                    <p>Under $50, $50-$75, $75-$100 (all verified for quality)</p>
+                </a>
+
+                <a href="rankings.html" class="ranking-card">
+                    <h3>⭐ By Feature</h3>
+                    <p>Free Breakfast, Fast WiFi, 24-Hour Check-in, Kitchen Access</p>
+                </a>
+
+                <a href="rankings.html" class="ranking-card">
+                    <h3>🚇 By Transit Access</h3>
+                    <p>Near Metro, Walkable Downtown, Near Airport, Near Train Station</p>
+                </a>
+
+                <a href="rankings.html" class="ranking-card">
+                    <h3>🌆 By Vibe</h3>
+                    <p>Nightlife Access, Quiet & Residential, Cultural District, Shopping District</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scale Vision -->
+    <section class="scale-vision">
+        <div class="container">
+            <h2 class="section-title">Built to Scale Globally</h2>
+
+            <div class="scale-table">
+                <div class="scale-header">
+                    <div>Entity Type</div>
+                    <div>Phase 1 (Now)</div>
+                    <div>Global Scale (Future)</div>
+                </div>
+
+                <div class="scale-row">
+                    <div>Cities</div>
+                    <div>250+</div>
+                    <div>10,000+</div>
+                </div>
+
+                <div class="scale-row">
+                    <div>Hotels</div>
+                    <div>10,000+</div>
+                    <div>1,000,000+</div>
+                </div>
+
+                <div class="scale-row">
+                    <div>Neighborhoods</div>
+                    <div>2,000+</div>
+                    <div>100,000+</div>
+                </div>
+
+                <div class="scale-row">
+                    <div>Value Rankings</div>
+                    <div>5,000+</div>
+                    <div>250,000+</div>
+                </div>
+
+                <div class="scale-row">
+                    <div>Booking Strategies</div>
+                    <div>500+</div>
+                    <div>5,000+</div>
+                </div>
+
+                <div class="scale-row">
+                    <div>Languages</div>
+                    <div>12</div>
+                    <div>12+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Language Selector -->
+    <section class="languages">
+        <div class="container">
+            <h2 class="section-title">Available in 12 Languages</h2>
+            <div class="language-grid">
+                <a href="/" class="language-link active">🇬🇧 English</a>
+                <a href="/es/" class="language-link">🇪🇸 Español</a>
+                <a href="/fr/" class="language-link">🇫🇷 Français</a>
+                <a href="/de/" class="language-link">🇩🇪 Deutsch</a>
+                <a href="/it/" class="language-link">🇮🇹 Italiano</a>
+                <a href="/pt/" class="language-link">🇵🇹 Português</a>
+                <a href="/ja/" class="language-link">🇯🇵 日本語</a>
+                <a href="/ko/" class="language-link">🇰🇷 한국어</a>
+                <a href="/hi/" class="language-link">🇮🇳 हिन्दी</a>
+                <a href="/zh-hans/" class="language-link">🇨🇳 简体中文</a>
+                <a href="/zh-hant/" class="language-link">🇹🇼 繁體中文</a>
+                <a href="/ar/" class="language-link">🇸🇦 العربية</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section - SEO/AEO Optimized -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about finding quality budget hotels</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">What are the best cheap hotels in a city that are still clean and safe?</h3>
+                    <div class="faq-answer">
+                        <p>The best cheap hotels that maintain cleanliness and safety standards are those that pass our 5-score verification system. We evaluate every hotel on <strong>cleanliness, safety, location, value, and consistency</strong>. Hotels must have:</p>
+                        <ul>
+                            <li>Verified clean sheets and bathrooms (no bedbug reports)</li>
+                            <li>Working locks and well-lit entrances</li>
+                            <li>Safe neighborhood location</li>
+                            <li>Consistent positive reviews across multiple sources</li>
+                        </ul>
+                        <p>Browse our <a href="cities.html">city guides</a> to find verified thrift hotels in your destination.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">What are the best budget hotels in the best neighborhoods?</h3>
+                    <div class="faq-answer">
+                        <p>We rank budget hotels by neighborhood quality, considering:</p>
+                        <ul>
+                            <li><strong>Safety scores</strong> - Well-lit streets, low crime rates, local reputation</li>
+                            <li><strong>Transit access</strong> - Walking distance to metro/bus stops</li>
+                            <li><strong>Walkability</strong> - Proximity to restaurants, shops, and attractions</li>
+                            <li><strong>Value density</strong> - Best price-to-location ratio</li>
+                        </ul>
+                        <p>Our <a href="neighborhoods.html">neighborhood guides</a> show exactly which areas offer the best budget stays without compromising on location.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Where should I stay if I want cheap but not sketchy?</h3>
+                    <div class="faq-answer">
+                        <p>The key is finding hotels that are <strong>"cheap by choice, not by necessity"</strong>. Look for:</p>
+                        <ul>
+                            <li>Hotels with character (historic buildings, boutique-style)</li>
+                            <li>Business hotels during off-peak seasons</li>
+                            <li>Smaller hotels in central locations that skip luxury amenities</li>
+                            <li>Properties with Tier A or B evidence ratings in our system</li>
+                        </ul>
+                        <p>We explicitly filter out sketchy hotels through our <strong>dealbreaker flags system</strong> - any hotel with safety complaints, scam pricing, or bait-and-switch photos is immediately removed.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">What are the best cheap hotels near downtown?</h3>
+                    <div class="faq-answer">
+                        <p>Downtown cheap hotels are the holy grail of budget travel. We rank them by:</p>
+                        <ul>
+                            <li><strong>Walking distance</strong> to major downtown attractions (under 15 minutes)</li>
+                            <li><strong>Metro proximity</strong> - One stop or less to city center</li>
+                            <li><strong>Price differential</strong> - How much you save vs. luxury downtown options</li>
+                            <li><strong>Trade-off transparency</strong> - Small rooms? Noise? We tell you upfront</li>
+                        </ul>
+                        <p>Filter our <a href="rankings.html">rankings</a> by "Near Downtown" to see the best centrally-located budget options.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">What are the best cheap hotels near stadiums, arenas, and venues?</h3>
+                    <div class="faq-answer">
+                        <p>Event travel requires strategic hotel selection. We identify budget hotels near major venues based on:</p>
+                        <ul>
+                            <li><strong>Walking distance</strong> to the venue (under 20 minutes)</li>
+                            <li><strong>Post-event transit</strong> - Can you get back safely after a late concert/game?</li>
+                            <li><strong>Surge pricing awareness</strong> - Which hotels jack up prices, which don't</li>
+                            <li><strong>Multi-night value</strong> - Best deals for festival weekends</li>
+                        </ul>
+                        <p>Check our <a href="collections.html">event travel collection</a> for venue-specific budget hotel recommendations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">How do I find cheap hotels without getting scammed?</h3>
+                    <div class="faq-answer">
+                        <p>Avoid hotel scams by following these verified strategies:</p>
+                        <ul>
+                            <li><strong>Multi-source verification</strong> - Check reviews on 3+ platforms (Booking.com, Google, TripAdvisor)</li>
+                            <li><strong>Recent photos</strong> - Look for photos uploaded in the last 6 months</li>
+                            <li><strong>Read negative reviews first</strong> - Look for patterns in complaints</li>
+                            <li><strong>Check for dealbreakers</strong> - Bedbugs, dirty bathrooms, fake photos</li>
+                            <li><strong>Price reality check</strong> - If it's 50% cheaper than everything else, there's a reason</li>
+                            <li><strong>Use our evidence tiers</strong> - Stick to Tier A and B hotels for highest confidence</li>
+                        </ul>
+                        <p>Read our complete <a href="strategies.html">scam avoidance guide</a> for detailed protection strategies.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">What's the cheapest hotel in a city that's still worth staying at?</h3>
+                    <div class="faq-answer">
+                        <p>The absolute cheapest hotel that maintains quality varies by city. We identify the "floor price" for quality stays in each destination:</p>
+                        <ul>
+                            <li><strong>Major US cities</strong> - Typically $50-75/night for quality budget stays</li>
+                            <li><strong>European capitals</strong> - €35-60/night depending on the city</li>
+                            <li><strong>Asian cities</strong> - Can range from $20-50/night with excellent quality</li>
+                            <li><strong>Latin America</strong> - $25-45/night for verified clean and safe options</li>
+                        </ul>
+                        <p>Each <a href="cities.html">city page</a> shows the lowest price point we recommend without compromising on our 5-score standards.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">What are the best cheap boutique hotels?</h3>
+                    <div class="faq-answer">
+                        <p>Cheap boutique hotels are rare gems - character and style on a budget. We find them by looking for:</p>
+                        <ul>
+                            <li><strong>Historic buildings</strong> with updated essentials but vintage charm</li>
+                            <li><strong>Independent ownership</strong> - Family-run hotels with personality</li>
+                            <li><strong>Artistic neighborhoods</strong> - Creative districts often have budget boutique options</li>
+                            <li><strong>Converted properties</strong> - Old banks, schools, or offices turned into hotels</li>
+                        </ul>
+                        <p>Browse our <a href="collections.html">boutique budget collection</a> for hand-picked character hotels that won't break the bank.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">What are the best cheap hotels for solo travelers?</h3>
+                    <div class="faq-answer">
+                        <p>Solo travelers need safety, location, and social opportunities. Best cheap hotels for solo travelers feature:</p>
+                        <ul>
+                            <li><strong>Central location</strong> - Safe walking at night, easy transit access</li>
+                            <li><strong>24-hour reception</strong> - Someone always available</li>
+                            <li><strong>Common areas</strong> - Lobbies or cafes where you can meet other travelers</li>
+                            <li><strong>Single room efficiency</strong> - Fair pricing for solo occupancy</li>
+                            <li><strong>Verified safety</strong> - Well-lit hallways, working locks, secure neighborhoods</li>
+                        </ul>
+                        <p>Check our <a href="collections.html">solo traveler guide</a> for hotels that prioritize safety and social connection.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">What are the best budget hotels for couples?</h3>
+                    <div class="faq-answer">
+                        <p>Couples want romance and privacy without luxury prices. Best budget hotels for couples offer:</p>
+                        <ul>
+                            <li><strong>Quiet rooms</strong> - Away from street noise and elevator shafts</li>
+                            <li><strong>Character over amenities</strong> - Exposed brick beats a rooftop pool</li>
+                            <li><strong>Romantic neighborhoods</strong> - Walkable to date-night restaurants and cafes</li>
+                            <li><strong>Double bed quality</strong> - Comfortable mattress, clean linens (non-negotiable)</li>
+                            <li><strong>Bathroom privacy</strong> - No shared bathrooms for couples</li>
+                        </ul>
+                        <p>Explore our <a href="collections.html">couples collection</a> for romantic budget stays in top cities worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Find Your Perfect Thrift Hotel?</h2>
+                <p>Join thousands of smart travelers saving money without sacrificing quality</p>
+                <div class="cta-buttons">
+                    <a href="cities.html" class="btn btn-primary btn-large">Start Exploring</a>
+                    <a href="strategies.html" class="btn btn-secondary btn-large">Learn Strategies</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="cities.html">Cities</a></li>
+                        <li><a href="neighborhoods.html">Neighborhoods</a></li>
+                        <li><a href="hotels.html">Hotels</a></li>
+                        <li><a href="rankings.html">Rankings</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="strategies.html">Booking Strategies</a></li>
+                        <li><a href="value.html">Value System</a></li>
+                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="stories.html">Travel Stories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="methodology.html">Our Methodology</a></li>
+                        <li><a href="contribute.html">Contribute</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-tagline">⭐ ThriftHotels.com - Cheapest Hotels That Are Still Quality</p>
+                <p class="footer-copyright">&copy; 2026 ThriftHotels.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
